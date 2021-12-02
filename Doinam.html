@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh Nam Am lich</title>
+</head>
+<body>
+    <script>
+        let year = parseInt(prompt('Năm Dương Lịch'));
+        let can = year%10;
+        let chi = year%12;
+        let lunarYear = "";
+        switch (can){
+            case 0 : 
+                lunarYear = lunarYear + "Canh";
+                break;
+            case 1 :
+                lunarYear = lunarYear + "Tan";
+                break;
+            case 2 : 
+                lunarYear = lunarYear + "Nham";
+                break;
+            case 3 : 
+                lunarYear = lunarYear + "Quy";
+                break;
+            case 4 : 
+                lunarYear = lunarYear + "Giap";
+                break;
+            case 5 : 
+                lunarYear = lunarYear + "At";
+                break;
+            case 6 : 
+                lunarYear = lunarYear + "Binh";
+                break;
+            case 7 : 
+                lunarYear = lunarYear + "Dinh";
+                break;
+            case 8 : 
+                lunarYear = lunarYear + "Mau";
+                break;
+            case 9 : 
+                lunarYear = lunarYear + "Ky";
+                break;
+        }
+        switch (chi){
+            case 0 : 
+                lunarYear = lunarYear + "Than";
+                break;
+            case 1 :
+                lunarYear = lunarYear + "Dau";
+                break;
+            case 2 : 
+                lunarYear = lunarYear + "Tuat";
+                break;
+            case 3 : 
+                lunarYear = lunarYear + "Hoi";
+                break;
+            case 4 : 
+                lunarYear = lunarYear + "Ty";
+                break;
+            case 5 : 
+                lunarYear = lunarYear + "Suu";
+                break;
+            case 6 : 
+                lunarYear = lunarYear + "Dan";
+                break;
+            case 7 : 
+                lunarYear = lunarYear + "Mao";
+                break;
+            case 8 : 
+                lunarYear = lunarYear + "Thin";
+                break;
+            case 9 : 
+                lunarYear = lunarYear + "Ty";
+                break;
+            case 10 : 
+                lunarYear = lunarYear + "Ngo";
+                break;
+            case 11 : 
+                lunarYear = lunarYear + "Mui";
+                break;
+        }
+        document.write(lunarYear)
+    </script>
+</body>
+</html>
